@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .body{
@@ -83,29 +83,30 @@
     border-radius: 10px;
 }
 
-.ul{
+ul{
     padding-left: 20px;
 }
 
-.li{
+li{
     margin-bottom: 15px;
 }
 
-.a{
+a{
     text-decoration: none;
     color: blue;
     font-weight: bold;
 }
 
-.a:hover{
+a:hover{
     text-decoration: overline;
 }
 
 
-@media (max-width: 768px){
+   @media (max-width: 768px){
 
     .header{
         flex-direction: column;
+        text-align: center;
         gap: 10px;
     }
 
@@ -115,8 +116,40 @@
     }
 
     .card, .gambar{
-        width: 90%;
+        width: 95%;
+        max-width: 400px;
     }
 }
+
+@media (max-width: 480px){
+
+    .gambar{
+        height: 280px;
+    }
+
+    .gambar-belakang, .gambar-depan{
+        width: 130px;
+        height: 130px;
+    }
+
+    .gambar-belakang{
+        right: 15px;
+        top: 20px;
+    }
+
+    .gambar-depan{
+        left: 15px;
+        top: 100px;
+    }
+
+    .card p{
+        font-size: 16px;
+    }
+
+    .header h2{
+        font-size: 22px;
+    }
+}
+
 
 
